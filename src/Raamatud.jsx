@@ -42,35 +42,23 @@ const Andmed = (props) => {
   const filteredRaamat = Raamatud.find((item) => item.id === currentId);
 
   return (
-    <div>
+    <div className="background">
       <h1>Raamatud</h1>
       <ul>
-        {filteredRaamat && (
-          <li key={filteredRaamat.id}>Raamatu nimi: {filteredRaamat.Nimi}</li>
-        )}
+        <li>Raamatu nimi: {filteredRaamat.Nimi}</li>
       </ul>
       <ul>
-        {filteredRaamat && (
-          <li key={filteredRaamat.id}>Autor: {filteredRaamat.Autor}</li>
-        )}
+        <li>Autor: {filteredRaamat.Autor}</li>
       </ul>
       <ul>
-        {filteredRaamat && (
-          <li key={filteredRaamat.id}>
-            Väljaandmise aasta: {filteredRaamat.Väljaandmise_aasta}
-          </li>
-        )}
+        <li>Väljaandmise aasta: {filteredRaamat.Väljaandmise_aasta}</li>
       </ul>
       <ul>
-        {filteredRaamat && (
-          <li key={filteredRaamat.id}>Kirjeldus: {filteredRaamat.Kirjeldus}</li>
-        )}
+        <li>Kirjeldus: {filteredRaamat.Kirjeldus}</li>
       </ul>
-      {filteredRaamat && (
-        <p key={filteredRaamat.id}>
-          <img className="Picture" src={filteredRaamat.Raamatu_pilt} alt="" />
-        </p>
-      )}
+      <p>
+        <img className="Picture" src={filteredRaamat.Raamatu_pilt} alt="" />
+      </p>
       <button className="Button" onClick={handleClick}>
         Järgmine raamat
       </button>

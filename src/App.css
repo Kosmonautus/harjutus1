@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: #282c34;
 }
 
 .App-logo {
@@ -38,13 +39,38 @@
 }
 
 .Button {
-  margin: 10px;
+  margin: 1px;
   padding: 10px;
   border: 1px solid #ccc;
+  margin-left: 2px;
   cursor: pointer;
 }
 .Picture {
   width: 200px;
   height: 300px;
   margin: 10px;
+}
+.row {
+  display: flex;
+}
+
+.column1 {
+  margin-top: 1%;
+  flex: 50%;
+  border: 2px solid black;
+  border-right: 0px;
+}
+.column2 {
+  margin-top: 1%;
+  flex: 50%;
+  border: 2px solid black;
+  align-content: center;
+  flex: center;
+}
+.column2_content {
+  text-align: center;
+}
+.background {
+  background-color: #282c34;
+  color: black;
 }
